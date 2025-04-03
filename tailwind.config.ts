@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,20 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+                royal: {
+                    50: '#f5f3ff',
+                    100: '#ede9fe',
+                    200: '#ddd6fe',
+                    300: '#c4b5fd',
+                    400: '#a78bfa',
+                    500: '#8b5cf6',
+                    600: '#7c3aed',
+                    700: '#6d28d9',
+                    800: '#5b21b6',
+                    900: '#4c1d95',
+                    950: '#2e1065',
+                }
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -70,25 +84,53 @@ export default {
 			},
 			keyframes: {
 				'accordion-down': {
-					from: {
-						height: '0'
-					},
-					to: {
-						height: 'var(--radix-accordion-content-height)'
-					}
+					from: { height: '0' },
+					to: { height: 'var(--radix-accordion-content-height)' }
 				},
 				'accordion-up': {
-					from: {
-						height: 'var(--radix-accordion-content-height)'
-					},
-					to: {
-						height: '0'
-					}
-				}
+					from: { height: 'var(--radix-accordion-content-height)' },
+					to: { height: '0' }
+				},
+                'float': {
+                    '0%, 100%': { transform: 'translateY(0)' },
+                    '50%': { transform: 'translateY(-10px)' }
+                },
+                'gradient-x': {
+                    '0%, 100%': {
+                        'background-size': '200% 200%',
+                        'background-position': 'left center'
+                    },
+                    '50%': {
+                        'background-size': '200% 200%',
+                        'background-position': 'right center'
+                    }
+                },
+                'flip': {
+                    '0%': { transform: 'rotateY(0)' },
+                    '100%': { transform: 'rotateY(180deg)' }
+                },
+                'flip-back': {
+                    '0%': { transform: 'rotateY(180deg)' },
+                    '100%': { transform: 'rotateY(0)' }
+                },
+                'scale-up': {
+                    '0%': { transform: 'scale(1)' },
+                    '100%': { transform: 'scale(1.05)' }
+                },
+                'pulse-slow': {
+                    '0%, 100%': { opacity: 1 },
+                    '50%': { opacity: 0.8 }
+                }
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+                'float': 'float 3s ease-in-out infinite',
+                'gradient-x': 'gradient-x 15s ease infinite',
+                'flip': 'flip 0.6s ease-out forwards',
+                'flip-back': 'flip-back 0.6s ease-out forwards',
+                'scale-up': 'scale-up 0.3s ease forwards',
+                'pulse-slow': 'pulse-slow 3s ease-in-out infinite'
 			}
 		}
 	},

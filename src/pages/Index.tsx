@@ -1,13 +1,36 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import { ThemeProvider } from '@/context/ThemeContext';
+import { Header } from '@/components/Header';
+import { Footer } from '@/components/Footer';
+import { Hero } from '@/components/sections/Hero';
+import { About } from '@/components/sections/About';
+import { Skills } from '@/components/sections/Skills';
+import { Projects } from '@/components/sections/Projects';
+import { Experience } from '@/components/sections/Experience';
+import { Resume } from '@/components/sections/Resume';
+import { Contact } from '@/components/sections/Contact';
+import { ParticleBackground } from '@/components/ParticleBackground';
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
+    <ThemeProvider>
+      <div className="min-h-screen overflow-x-hidden">
+        <ParticleBackground />
+        <Header />
+        
+        <main>
+          <Hero />
+          <About />
+          <Skills />
+          <Projects />
+          <Experience />
+          <Resume />
+          <Contact />
+        </main>
+        
+        <Footer />
       </div>
-    </div>
+    </ThemeProvider>
   );
 };
 
