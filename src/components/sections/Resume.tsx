@@ -2,6 +2,7 @@
 import { FileBadge, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
+import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 
 export function Resume() {
   const education = {
@@ -32,14 +33,20 @@ export function Resume() {
               </Button>
             </div>
             
-            <div className="mb-8">
-              <h4 className="text-lg font-semibold mb-2">Education</h4>
-              <div className="border-l-4 border-royal-500 dark:border-royal-400 pl-4 py-1">
-                <div className="mb-2">
-                  <p className="font-medium">{education.degree}</p>
-                  <p className="text-muted-foreground">{education.school}</p>
-                </div>
-                <div className="flex justify-between text-sm">
+            <div className="flex flex-col md:flex-row items-center gap-8 mb-8">
+              <Avatar className="w-32 h-32 border-4 border-royal-500">
+                <AvatarImage 
+                  src="/lovable-uploads/f7a7700e-f1e0-42e8-8921-965197d43059.png" 
+                  alt="Yashash Mathur" 
+                  className="object-cover"
+                />
+                <AvatarFallback>YM</AvatarFallback>
+              </Avatar>
+              
+              <div>
+                <p className="font-medium">{education.degree}</p>
+                <p className="text-muted-foreground">{education.school}</p>
+                <div className="flex justify-between text-sm mt-2">
                   <span>{education.period}</span>
                   <span className="font-medium">GPA: {education.gpa}</span>
                 </div>
@@ -81,3 +88,4 @@ export function Resume() {
     </section>
   );
 }
+
