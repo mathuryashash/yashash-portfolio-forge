@@ -19,14 +19,14 @@ export function Projects() {
       title: "Rescue Path Finder",
       description: "An application that finds the optimal path using pathfinding algorithms like A-star, Dijkstra's, DFS, and BFS.",
       image: "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?q=80&w=2070&auto=format&fit=crop",
-      githubUrl: "https://github.com",
+      githubUrl: "https://github.com/mathuryashash/RescuePathFinder.git",
       technologies: ["Java", "SQL", "Pathfinding Algorithms"]
     },
     {
       title: "Music Player",
       description: "A custom music player application with play, pause, next, and previous functionality for songs in the playlist.",
       image: "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=2070&auto=format&fit=crop",
-      githubUrl: "https://github.com",
+      githubUrl: "https://github.com/mathuryashash/java-mini-project.git",
       technologies: ["Java", "Media Handling"]
     }
   ];
