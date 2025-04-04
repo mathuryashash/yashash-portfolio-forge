@@ -36,7 +36,7 @@ export function Resume() {
             <div className="flex flex-col md:flex-row items-center gap-8 mb-8">
               <Avatar className="w-32 h-32 border-4 border-royal-500">
                 <AvatarImage 
-                  src="/lovable-uploads/f7a7700e-f1e0-42e8-8921-965197d43059.png" 
+                  src="/lovable-uploads/0087a2f8-06f9-4930-ad4b-82488f1990c2.png" 
                   alt="Yashash Mathur" 
                   className="object-cover"
                 />
