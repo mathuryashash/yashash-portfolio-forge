@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
@@ -32,7 +31,7 @@ export function About() {
             })}>
               <div className="flip-card-front h-full w-full rounded-2xl overflow-hidden shadow-xl border border-royal-200 dark:border-royal-800">
                 <img 
-                  src="/lovable-uploads/c429f889-7e54-4876-9795-c59c36bc0378.png" 
+                  src="/lovable-uploads/0087a2f8-06f9-4930-ad4b-82488f1990c2.png" 
                   alt="Yashash Mathur" 
                   className="w-full h-full object-cover"
                 />
